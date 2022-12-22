@@ -1,0 +1,17 @@
+.select {
+
+    display: inline-block;
+
+}
+.main {
+    border: 2px solid orchid;
+}
+.items{
+    border: 2px solid darkgreen;
+    position: absolute;
+
+}
+.active{
+    display: block;
+    border: 2px solid orangered;
+}
