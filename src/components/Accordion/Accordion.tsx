@@ -16,7 +16,7 @@ type AccordionPropsType = {
 /*// !props.accordionCollapsed  означает что colapsed false*/
 function Accordion(props: AccordionPropsType) {
     // let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
-    debugger
+
     let [accordionCollapsed, dispatch] = useReducer(reducer, {accordionCollapsed: false})
 
 
@@ -36,6 +36,8 @@ function Accordion(props: AccordionPropsType) {
         </div>
     );
 }
+const AccordionMemo = React.memo(Accordion)
+
 
 type AccordionTitleType = {
     title: string
@@ -74,4 +76,4 @@ function AccordionTitle(props: AccordionTitleType) {
 //     );
 // }
 //
-export default Accordion;
+export default AccordionMemo;

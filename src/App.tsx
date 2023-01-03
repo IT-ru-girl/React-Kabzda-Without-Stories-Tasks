@@ -11,6 +11,11 @@ import UncontrolledInput from './components/UncontrolledInput/UncontrolledInput'
 import Input from './components/Input/Input';
 
 import Select from './components/Input/Select';
+import ReactMemo from './components/ReactMemo/ReactMemo';
+import AccordionMemo from './components/Accordion/Accordion';
+import UseMemo from './components/UseMemo/UseMemo';
+import UseMemo2 from './components/UseMemo/UseMemo2';
+import HelpsReactMemo from './components/UseMemo/UseMemo2';
 
 function App() {
     console.log('App rendering')
@@ -35,7 +40,7 @@ function App() {
             <PageTitle title={'my friends'}/>
             <UncontrolledRating/>
             <Rating value={ratingValue} onClick={setRatingValue}/>
-            <Accordion items={[
+            <AccordionMemo items={[
                 {title: 'dim', value: 1},
                 {title: 'sash', value: 2},
                 {title: 'mash', value: 3},
@@ -53,9 +58,10 @@ function App() {
                 {title: 'sash', value: '2'},
                 {title: 'mash', value: '3'},
                 {title: 'alex', value: '4'}]}
-
-
             />
+            <ReactMemo/>
+            <UseMemo/>
+            <HelpsReactMemo/>
         </div>
     );
 }
